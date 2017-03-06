@@ -11,9 +11,10 @@ namespace MockupApp
     {
         public App()
         {
+
             InitializeComponent();
 
-            MainPage = new MockupApp.MainPage();
+            MainPage = new ActivityPage();
         }
 
         protected override void OnStart()
