@@ -14,7 +14,19 @@ namespace MockupApp
     {
         public Clients()
         {
+
             InitializeComponent();
+            LvClient.ItemsSource = new List<string>
+            {
+                "Ad","Bert","Chris","Dirk","Erik","Frederik"
+            };
+
+        }
+
+        private void LvClient_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            var clients1 = new Clients_1();
+            Navigation.PushAsync(clients1);
         }
     }
 }

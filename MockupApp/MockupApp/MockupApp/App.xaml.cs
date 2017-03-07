@@ -14,7 +14,7 @@ namespace MockupApp
 
             InitializeComponent();
 
-            MainPage = new ActivityPage();
+            MainPage = new NavigationPage(new ActivityPage());
         }
 
         protected override void OnStart()

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            x:Class="MockupApp.Dashboard" Title="Dashboard" Icon="ic_dashboard_black_24dp.png">
-    <StackLayout>
+            x:Class="MockupApp.Dashboard" Title="Dashboard" Icon="ic_dashboard_black_24dp.png" BackgroundImage="dashboardnew.png">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
         <Label Text="My Dashboard"></Label>
     </StackLayout>
 </ContentPage>
