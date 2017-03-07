@@ -25,8 +25,8 @@ namespace MockupApp
 
         private void LvClient_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var clients1 = new Clients_1();
-            Navigation.PushAsync(clients1);
+            var selectedclient = LvClient.SelectedItem.ToString();
+            Navigation.PushAsync(new Clients_1(selectedclient));
         }
     }
 }

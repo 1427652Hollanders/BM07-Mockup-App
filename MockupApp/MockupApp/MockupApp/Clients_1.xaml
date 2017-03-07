@@ -1,6 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MockupApp.Clients_1" Title="Client">
-    <Label Text="Selected item"></Label>
+             x:Class="MockupApp.Clients_1">
+    <ScrollView>
+    <StackLayout Padding="0,20,0,0">
+
+        <Grid BackgroundColor="Silver" Margin="20,20,20,20">
+            <StackLayout>
+                <Label Margin="10,10,10,10" HorizontalOptions="Center" TextColor="#000000" x:Name="Lbinfo" FontSize="Large"></Label>
+                <Label Margin="10,10,10,10" HorizontalOptions="Center" TextColor="#000000" x:Name="Lbinfo2" FontSize="Large"></Label>
+               
+            </StackLayout>
+        </Grid>
+
+        <StackLayout Padding="200,10,200,0">
+            <Grid HorizontalOptions="Center">
+                <ListView x:Name="LvCases"></ListView>
+                    <Button x:Name="BtnAdd" HorizontalOptions="Center" Text="+" VerticalOptions="Center" Clicked="BtnAdd_OnClicked"></Button>
+                    
+                </Grid>
+                
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Padding="100,0,100,30">
+                <Entry BackgroundColor="Silver" x:Name="EntryCaseName" Text="Case name..." TextColor="#000000"></Entry>
+            </StackLayout>
+            
+
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
