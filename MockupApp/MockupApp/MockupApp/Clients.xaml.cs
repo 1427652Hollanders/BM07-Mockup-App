@@ -14,7 +14,8 @@ namespace MockupApp
     {
         public Clients()
         {
-
+            //Op mijn device (Yannik, LG G5), wanneer een client is geselecteerd, pushed die de client1 page naar de "top of the navigation stack". 
+            //Als je dan terug gaat en weer op diezelfde client wilt klikken, is dat niet mogelijk.
             InitializeComponent();
             LvClient.ItemsSource = new List<string>
             {
