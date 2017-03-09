@@ -44,6 +44,9 @@
     <Compile Include="BoomStructuur.xaml.cs">
       <DependentUpon>BoomStructuur.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BsParticipatie.xaml.cs">
+      <DependentUpon>BsParticipatie.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BsActiviteiten.xaml.cs">
       <DependentUpon>BsActiviteiten.xaml</DependentUpon>
     </Compile>
@@ -106,7 +109,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BoomStructuur.xaml">
+    <EmbeddedResource Include="BsParticipatie.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -149,6 +152,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="BsCaseCatNotitie.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BoomStructuur.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
