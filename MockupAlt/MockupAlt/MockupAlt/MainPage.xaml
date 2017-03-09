@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:local="clr-namespace:MockupAlt"
+                  x:Class="MockupAlt.MainPage">
+
+    <MasterDetailPage.Master>
+        <ContentPage Padding="10" BackgroundColor="White" Title="Master">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label HorizontalOptions="Center" Text="Menu" />
+                    <Button x:Name="Btn1" Text="Dashboard" BackgroundColor="Transparent" Clicked="Btn1_OnClicked"></Button>
+                    <Button x:Name="Btn2" Text="Clienten" BackgroundColor="Transparent"></Button>
+                    <Button x:Name="Btn3" Text="Boomstructuur" BackgroundColor="Transparent"></Button>
+                    <Button x:Name="Btn4" Text="Kennisbank" BackgroundColor="Transparent"></Button>
+                    <Button x:Name="Btn5" Text="Groepen" BackgroundColor="Transparent"></Button>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Dashboard" />
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+
+</MasterDetailPage>
