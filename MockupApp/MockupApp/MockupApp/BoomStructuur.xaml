@@ -2,5 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MockupApp.BoomStructuur" Title="Boomstructuur" Icon="ic_toc_black_24dp">
-    <Label Text="Boomstructuur"></Label>
+    <StackLayout>
+        <Label Text="Boomstructuur"></Label>
+        <Picker x:Name="PartitiepatiePicker"></Picker>
+        <Picker x:Name="ActiviteitenPicker"></Picker>
+        <Picker x:Name="CasePicker"></Picker>
+        <Button x:Name="BtnAdd" HorizontalOptions="Center" Text="->" VerticalOptions="Center" Clicked="BtnAdd_OnClicked"></Button>
+    </StackLayout>
+    
 </ContentPage>
